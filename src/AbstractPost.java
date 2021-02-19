@@ -16,5 +16,5 @@ public abstract class AbstractPost {
                  System.out.printf("author: %s  data: %s  post: %s postType: %s \n", author, data, post, postType);
     }
 
-    public abstract int getSize();
+    public abstract int getMaxSizeOfPost();
 }

@@ -4,7 +4,7 @@ public class Text extends AbstractPost {
         super(author, data, post, postType);
     }
 
-    public int getSize() {
+    public int getMaxSizeOfPost() {
         return 0;
     }
 }

@@ -1,6 +1,12 @@
 public class Audio extends Media {
-    public Audio(String author, String data, String post, String postType) {
+    private final String audioTitle;
+
+    public Audio(String author, String data, String post, String postType, String audioTitle) {
         super(author, data, post, postType);
+        this.audioTitle = audioTitle;
     }
-    private String audioTitle;
+
+    public void addNewAudio (){
+        System.out.println("Select the file on your computer to start downloading");
+    }
 }
