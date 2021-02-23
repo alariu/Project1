@@ -1,12 +1,23 @@
-public class Image extends Media {
+public class Image extends Media implements Printable {
     private String imageTitle;
 
-    public Image(String author, String data, String post, String postType, String imageTitle) {
-        super(author, data, post, postType);
+    public Image(String author, String data, String post, PostType type, String imageTitle) {
+        super(author, data, post, type);
         this.imageTitle = imageTitle;
     }
 
-    public void addNewImage (){
-        System.out.println("Select the file on your computer to start downloading");
+    public String getImageTitle() {
+        return imageTitle;
     }
+
+    public void addNewImage (){
+        System.out.println("Select the file on your computer to start downloading.");
+    }
+
+    public void print() {
+        System.out.println("Image" + imageTitle + "was printed.");
+
+    }
+
+
 }

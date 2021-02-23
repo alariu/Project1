@@ -1,7 +1,7 @@
 public class Media extends AbstractPost {
 
-    public Media(String author, String data, String post, String postType) {
-        super(author, data, post, postType);
+    public Media(String author, String data, String post, PostType type) {
+        super(author, data, post, type);
     }
 
     public int getMaxSizeOfPost() {
